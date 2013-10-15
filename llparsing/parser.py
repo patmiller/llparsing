@@ -86,6 +86,7 @@ class sequence(template):
             tail_function = set_arguments(tail_function,('self',main),tail)
         else:
             def tail_function(self,sep,main):
+                main.insert(0,sep)
                 return main
             tail_function = set_arguments(tail_function,('self',sep,main),tail)
 
