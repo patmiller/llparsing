@@ -1,0 +1,2 @@
+class AmbiguityError(Exception):
+    pass
